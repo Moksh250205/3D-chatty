@@ -30,7 +30,7 @@ const animationMorphTargetsValue = {
 };
 
 export function Avatar(props) {
-  const { scene } = useGLTF('/../src/assets/model.glb');
+  const { scene } = useGLTF('/model.glb');
   const clone = useMemo(() => {
     const cloneSkeleton = SkeletonUtils.clone(scene);
     return cloneSkeleton;
