@@ -48,12 +48,12 @@ async function handleChat(userId, userMessage) {
       );
     }
 
-    const audioFileUrl = await textToSpeechService(response.TextForTTS);
+    // const audioFileUrl = await textToSpeechService(response.TextForTTS);
 
     return {
       message: response.AIresponse,
       function: response.functionCall,
-      audioUrl: audioFileUrl
+      audioUrl: null
     };
   } catch (error) {
     console.error('Error in handleChat:', error);
